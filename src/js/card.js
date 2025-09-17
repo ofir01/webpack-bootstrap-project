@@ -1,6 +1,8 @@
 import {API_people, API_films, API_peoples, API_people_url } from './api.js';
 
 
+
+//תפריט חזרה
 function updateBreadcrumb(steps) {
     const breadcrumb = document.querySelector('.breadcrumb');
     breadcrumb.innerHTML = ''; // מנקה קודם
@@ -43,7 +45,7 @@ export async function people(resulte,data = '') {
     const row = document.createElement('div');
     row.className = 'row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4'; // רספונסיבי
 
-    console.log(data);
+    //console.log(data);
     // breadcrumb
     updateBreadcrumb([
         { label: 'Home', onClick: () => location.reload() }
