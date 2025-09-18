@@ -9,7 +9,8 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: './'
   },
   devServer: {
     static: path.resolve(__dirname, 'dist'),
@@ -22,7 +23,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(scss)$/,
+        test: /\.(css)$/,
         use: [
           {
             // Adds CSS to the DOM by injecting a `<style>` tag

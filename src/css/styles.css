@@ -1,4 +1,4 @@
-@import "bootstrap/scss/bootstrap";
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 body {
     background-image: url('/src/img/background.png');
@@ -49,3 +49,6 @@ background-size: cover;     /* מכסה את כל הדיב */
 .breadcrumb-item.active {
     color: white;
 }
+
+
+
